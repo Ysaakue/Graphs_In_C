@@ -199,7 +199,11 @@ void iniciar(graph *grafo)
 	x=Acre;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y == Amazonas)grafo->matriz[x][y].adj = true;
+		if(y == Amazonas)
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
@@ -377,47 +381,11 @@ void iniciar(graph *grafo)
 		if(y==Bahia || y==Maranhao || y==Para || y==Mato_Grosso || y==Goias)grafo->matriz[x][y].adj = true;
 		else grafo->matriz[x][y].adj=false;
 	}
-	printf("feito");
+	// printf("feito");
 }
 
 
 //**********************************************************************
 
-prod(bool a[][quantidade], int b[][quantidade], int c[][quantidade])
-{
-	int i,j,k;
-	bool val;
-
-	for(i=0;i<quantidade;++i)
-		for(j=0;j<quantidade;++j)
-		{
-			val = false;
-			for(k=0;k<quantidade;++k)
-				val = val || (a[i][k] && b[k][j]);
-			c[i][j] = val;
-		}
-}
-//**********************************************************************
-
-transclose(bool adj[][quantidade], bool path[][quantidade])
-{
-	int i,j,k;
-	bool newprod[quantidade][quantidade], adjprod[quantidade][quantidade];
-
-	for(i=0;i<quantidade;++i)
-		for(j=0;j<quantidade;++j)
-			adjprod[i][j] = path[i][j] = adj[i][j];
-	
-	for(i=0;i<quantidade;++i)
-	{
-		prod(adjprod,adj,newprod);
-		for(j=0;j<quantidade;j++)
-			for(k=0;k<quantidade;k++)
-				path[j][k] = path[j][k] || newprod[j][k];
-		for(j=0;j<quantidade;j++)
-			for(k=0;k<quantidade;k++)
-				adjprod[j][k] = newprod[j][k];
-	}
-}
 
 //**********************************************************************
