@@ -199,56 +199,198 @@ void iniciar(graph *grafo)
 	x=Acre;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y == Amazonas)grafo->matriz[x][y].adj = true;
+		if(y == Amazonas)
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 830;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Alagoas;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y ==Bahia || y==Pernambuco || y==Sergipe )grafo->matriz[x][y].adj = true;
+		if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1024;
+		}
+		else if(y == Pernambuco )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 87;
+		}
+		else if(y == Sergipe )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 144;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Amapa;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y ==Para)grafo->matriz[x][y].adj = true;
+		if(y ==Para)
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 855;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 	
 	x=Amazonas;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y == Acre || y==Roraima || y==Para || y==Mato_Grosso || y==Rondonia )grafo->matriz[x][y].adj = true;
+		if(y == Acre )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 830;
+		}
+		else if(y == Roraima )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 741;
+		}
+		else if(y == Para )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1490;
+		}
+		else if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1424;
+		}
+		else if(y == Rondonia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 934;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Bahia;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Sergipe || y==Alagoas || y==Pernambuco || y==Piaui || y==Tocantins || y==Goias || y==Minas_Gerais || y==Espirito_Santo )grafo->matriz[x][y].adj = true;
+		if(y == Sergipe )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 425;
+		}
+		else if(y == Alagoas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 533;
+		}
+		else if(y == Pernambuco )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 555;
+		}
+		else if(y == Piaui )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 402;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 794;
+		}
+		else if(y == Goias )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 996;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 774;
+		}
+		else if(y == Espirito_Santo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 871;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Ceara;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Piaui || y==Pernambuco || y==Paraiba || y==Rio_Grande_do_Norte)grafo->matriz[x][y].adj = true;
+		if(y == Piaui )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 529;
+		}
+		else if(y == Pernambuco )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 452;
+		}
+		else if(y == Paraiba )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 341;
+		}
+		else if(y == Rio_Grande_do_Norte )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 286;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 	
 	x=Espirito_Santo;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Bahia || y==Minas_Gerais || y==Rio_de_Janeiro)grafo->matriz[x][y].adj = true;
+		if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 871;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 393;
+		}
+		else if(y == Rio_de_Janeiro )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 512;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 	
 	x=Goias;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Mato_Grosso_do_Sul || y==Minas_Gerais || y==Bahia || y==Tocantins || y==Mato_Grosso)grafo->matriz[x][y].adj = true;
+		if(y == Mato_Grosso_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 812;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 715;
+		}
+		else if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1084;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 764;
+		}
+		else if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 812;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
@@ -332,7 +474,11 @@ void iniciar(graph *grafo)
 	x=Rio_Grande_do_Sul;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Santa_Catarina)grafo->matriz[x][y].adj = true;
+		if(y==Santa_Catarina)
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 450;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
@@ -378,46 +524,6 @@ void iniciar(graph *grafo)
 		else grafo->matriz[x][y].adj=false;
 	}
 	printf("feito");
-}
-
-
-//**********************************************************************
-
-prod(bool a[][quantidade], int b[][quantidade], int c[][quantidade])
-{
-	int i,j,k;
-	bool val;
-
-	for(i=0;i<quantidade;++i)
-		for(j=0;j<quantidade;++j)
-		{
-			val = false;
-			for(k=0;k<quantidade;++k)
-				val = val || (a[i][k] && b[k][j]);
-			c[i][j] = val;
-		}
-}
-//**********************************************************************
-
-transclose(bool adj[][quantidade], bool path[][quantidade])
-{
-	int i,j,k;
-	bool newprod[quantidade][quantidade], adjprod[quantidade][quantidade];
-
-	for(i=0;i<quantidade;++i)
-		for(j=0;j<quantidade;++j)
-			adjprod[i][j] = path[i][j] = adj[i][j];
-	
-	for(i=0;i<quantidade;++i)
-	{
-		prod(adjprod,adj,newprod);
-		for(j=0;j<quantidade;j++)
-			for(k=0;k<quantidade;k++)
-				path[j][k] = path[j][k] || newprod[j][k];
-		for(j=0;j<quantidade;j++)
-			for(k=0;k<quantidade;k++)
-				adjprod[j][k] = newprod[j][k];
-	}
 }
 
 //**********************************************************************
