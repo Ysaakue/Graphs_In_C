@@ -400,17 +400,17 @@ void iniciar(graph *grafo)
 		if(y == Piaui )
 		{
 			grafo->matriz[x][y].adj = true;
-			grafo->matriz[x][y].distancia = 812;
+			grafo->matriz[x][y].distancia = 376;
 		}
 		else if(y == Tocantins )
 		{
 			grafo->matriz[x][y].adj = true;
-			grafo->matriz[x][y].distancia = 715;
+			grafo->matriz[x][y].distancia = 533;
 		}
 		else if(y == Para )
 		{
 			grafo->matriz[x][y].adj = true;
-			grafo->matriz[x][y].distancia = 1084;
+			grafo->matriz[x][y].distancia = 824;
 		}
 		else grafo->matriz[x][y].adj=false;
 	}
@@ -418,70 +418,275 @@ void iniciar(graph *grafo)
 	x=Mato_Grosso;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Rondonia || y==Amazonas || y==Para || y==Tocantins || y==Goias || y==Mato_Grosso_do_Sul)grafo->matriz[x][y].adj = true;
+		if(y == Rondonia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 824;
+		}
+		else if(y == Amazonas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 736;
+		}
+		else if(y == Para )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1424;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1021;
+		}
+		else if(y == Goias )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 882;
+		}
+		else if(y == Mato_Grosso_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 928;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Mato_Grosso_do_Sul;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Mato_Grosso || y==Goias || y==Minas_Gerais || y==Sao_Paulo || y==Parana)grafo->matriz[x][y].adj = true;
+		if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 928;
+		}
+		else if(y == Goias )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 726;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1196;
+		}
+		else if(y == Sao_Paulo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 893;
+		}
+		else if(y == Parana )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 573;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 	
 	x=Minas_Gerais;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Rio_de_Janeiro || y==Espirito_Santo || y==Bahia || y==Goias || y==Mato_Grosso_do_Sul || y==Sao_Paulo)grafo->matriz[x][y].adj = true;
+		if(y == Rio_de_Janeiro )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 565;
+		}
+		else if(y == Espirito_Santo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 393;
+		}
+		else if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 774;
+		}
+		else if(y == Goias )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1021;
+		}
+		else if(y == Mato_Grosso_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 882;
+		}
+		else if(y == Sao_Paulo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 928;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 	
 	x=Para;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Maranhao || y==Tocantins || y==Mato_Grosso || y==Amazonas || y==Roraima)grafo->matriz[x][y].adj = true;
+		if(y == Maranhao )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 824;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 726;
+		}
+		else if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 856;
+		}
+		else if(y == Amazonas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1490;
+		}
+		else if(y == Roraima )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1347;
+		}	
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Paraiba;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Rio_Grande_do_Norte || y==Ceara || y==Pernambuco)grafo->matriz[x][y].adj = true;
+		if(y == Rio_Grande_do_Norte )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 150;
+		}
+		else if(y == Ceara )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 341;
+		}
+		else if(y == Pernambuco )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 177;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Parana;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Mato_Grosso_do_Sul || y==Sao_Paulo || y==Santa_Catarina)grafo->matriz[x][y].adj = true;
+		if(y == Mato_Grosso_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 573;
+		}
+		else if(y == Sao_Paulo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 575;
+		}
+		else if(y == Santa_Catarina )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 325;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Pernambuco;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Ceara || y==Paraiba || y==Piaui || y==Sergipe || y==Bahia)grafo->matriz[x][y].adj = true;
+		if(y == Ceara )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 452;
+		}
+		else if(y == Paraiba )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 177;
+		}
+		else if(y == Piaui )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 687;
+		}
+		else if(y == Sergipe )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 215;
+		}
+		else if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 555;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Piaui;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Ceara || y==Pernambuco || y==Bahia || y==Tocantins || y==Maranhao)grafo->matriz[x][y].adj = true;
+		if(y == Ceara )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 529;
+		}
+		else if(y == Pernambuco )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 687;
+		}
+		else if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 402;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 566;
+		}
+		else if(y == Maranhao )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 376;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Rio_de_Janeiro;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Espirito_Santo || y==Minas_Gerais || y==Sao_Paulo)grafo->matriz[x][y].adj = true;
+		if(y == Espirito_Santo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 512;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 557;
+		}
+		else if(y == Sao_Paulo )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 360;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Rio_Grande_do_Norte;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Ceara || y==Paraiba)grafo->matriz[x][y].adj = true;
+		if(y == Ceara )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 263;
+		}
+		else if(y == Paraiba )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 150;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
@@ -499,45 +704,124 @@ void iniciar(graph *grafo)
 	x=Rondonia;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Mato_Grosso || y==Amazonas)grafo->matriz[x][y].adj = true;
+		if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 736;
+		}
+		else if(y == Amazonas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 934;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Roraima;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Amazonas || y==Para)grafo->matriz[x][y].adj = true;
+		if(y == Amazonas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 741;
+		}
+		else if(y == Para )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1347;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Santa_Catarina;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Parana || y==Rio_Grande_do_Sul)grafo->matriz[x][y].adj = true;
+		if(y == Parana )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 283;
+		}
+		else if(y == Rio_Grande_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 490;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Sao_Paulo;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Rio_de_Janeiro || y==Minas_Gerais || y==Mato_Grosso_do_Sul || y==Parana)grafo->matriz[x][y].adj = true;
+		if(y == Rio_de_Janeiro )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 360;
+		}
+		else if(y == Minas_Gerais )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 694;
+		}
+		else if(y == Mato_Grosso_do_Sul )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 893;
+		}
+		else if(y == Parana )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 575;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Sergipe;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Alagoas || y==Bahia)grafo->matriz[x][y].adj = true;
+		if(y == Alagoas )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 144;
+		}
+		else if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 425;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
 	x=Tocantins;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Bahia || y==Maranhao || y==Para || y==Mato_Grosso || y==Goias)grafo->matriz[x][y].adj = true;
+		if(y == Bahia )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 794;
+		}
+		else if(y == Maranhao )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 743;
+		}
+		else if(y == Para )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 604;
+		}
+		else if(y == Mato_Grosso )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1021;
+		}
+		else if(y == Goias )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 527;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
-	// printf("feito");
+	printf("feito");
 }
 
 //**********************************************************************
