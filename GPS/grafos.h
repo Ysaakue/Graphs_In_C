@@ -397,7 +397,21 @@ void iniciar(graph *grafo)
 	x=Maranhao;
 	for(y=0;y<quantidade;y++)
 	{
-		if(y==Piaui || y==Tocantins || y==Para)grafo->matriz[x][y].adj = true;
+		if(y == Piaui )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 812;
+		}
+		else if(y == Tocantins )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 715;
+		}
+		else if(y == Para )
+		{
+			grafo->matriz[x][y].adj = true;
+			grafo->matriz[x][y].distancia = 1084;
+		}
 		else grafo->matriz[x][y].adj=false;
 	}
 
