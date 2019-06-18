@@ -825,3 +825,43 @@ void iniciar(graph *grafo)
 }
 
 //**********************************************************************
+
+void shortpath(int distanciasCidades[][quantidade], int *nos, int origem, int destino)
+{
+	int caminho[quantidade],conhecidos[quantidade],distancia[quantidade];
+	int atual,i,k,distancia_atual,min,novadistancia;
+
+	for(i=0;i<quantidade;i++)
+	{
+		conhecidos[i] = 0;
+		distancia[i] = __INT_MAX__;
+	}
+	conhecidos[origem]=1;
+	atual = origem;
+
+	while(atual != destino)
+	{
+		min=__INT_MAX__;
+		distancia_atual=distancia[atual];
+
+		for(i=0;i<quantidade;i++)
+			if(conhecidos[i] == 0)
+			{
+				novadistancia = distancia_atual + distanciasCidades[atual][i];
+
+				if(novadistancia < distancia[i])
+				{
+					distancia[i] = novadistancia;
+					caminho[i] = atual;
+				}
+				if(distancia[i] < min)
+				{
+					min = distancia[i];
+					k=i;
+				}
+			}
+		atual = k;
+		conhecidos[atual] = 1;
+	}
+	printf(" A distancia minima entre %s e %s eh %d km",nos[origem],nos[destino],distancia[destino]);
+}
