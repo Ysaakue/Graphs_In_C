@@ -110,6 +110,7 @@ typedef struct
 void continuar()
 {
 	puts("\nPRESSIONE ENTER PARA CONTINUAR");
+	fflush(stdin);
 	getchar();
 }
 
@@ -205,7 +206,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 830;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Alagoas;
@@ -226,7 +227,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 144;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Amapa;
@@ -237,7 +238,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 855;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	
 	x=Amazonas;
@@ -268,7 +269,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 934;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Bahia;
@@ -314,7 +315,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 871;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Ceara;
@@ -340,7 +341,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 286;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	
 	x=Espirito_Santo;
@@ -361,7 +362,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 512;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	
 	x=Goias;
@@ -392,7 +393,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 812;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Maranhao;
@@ -413,7 +414,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 824;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Mato_Grosso;
@@ -449,7 +450,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 928;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Mato_Grosso_do_Sul;
@@ -480,7 +481,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 573;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	
 	x=Minas_Gerais;
@@ -516,7 +517,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 928;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	
 	x=Para;
@@ -547,7 +548,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 1347;
 		}	
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Paraiba;
@@ -568,7 +569,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 177;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Parana;
@@ -589,7 +590,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 325;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Pernambuco;
@@ -620,7 +621,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 555;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Piaui;
@@ -651,7 +652,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 376;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Rio_de_Janeiro;
@@ -672,7 +673,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 360;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Rio_Grande_do_Norte;
@@ -688,7 +689,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 150;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Rio_Grande_do_Sul;
@@ -699,7 +700,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 450;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Rondonia;
@@ -715,7 +716,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 934;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Roraima;
@@ -731,7 +732,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 1347;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Santa_Catarina;
@@ -747,7 +748,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 490;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Sao_Paulo;
@@ -773,7 +774,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 575;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Sergipe;
@@ -789,7 +790,7 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 425;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 
 	x=Tocantins;
@@ -820,35 +821,36 @@ void iniciar(graph *grafo)
 			grafo->matriz[x][y].adj = true;
 			grafo->matriz[x][y].distancia = 527;
 		}
-		else grafo->matriz[x][y].adj=false;
+		else{grafo->matriz[x][y].adj=false;grafo->matriz[x][y].distancia = __INT_MAX__/2;}
 	}
 	printf("feito");
 }
 
 //**********************************************************************
 
-void shortpath(int distanciasCidades[][quantidade], int *nos, int origem, int destino)
+void shortpath(arco distanciasCidades[][quantidade], no nos[], int origem, int destino)
 {
 	int caminho[quantidade],conhecidos[quantidade],distancia[quantidade];
 	int atual,i,k,distancia_atual,min,novadistancia,z;
-
+	
 	for(i=0;i<quantidade;i++)
 	{
 		conhecidos[i] = 0;
-		distancia[i] = __INT_MAX__;
+		distancia[i] = __INT_MAX__/2;
 	}
 	conhecidos[origem]=1;
+	distancia[origem] = 0;
 	atual = origem;
-
+	
 	while(atual != destino)
 	{
-		min=__INT_MAX__;
+		min=__INT_MAX__/2;
 		distancia_atual=distancia[atual];
 
 		for(i=0;i<quantidade;i++)
 			if(conhecidos[i] == 0)
 			{
-				novadistancia = distancia_atual + distanciasCidades[atual][i];
+				novadistancia = distancia_atual + distanciasCidades[atual][i].distancia;
 
 				if(novadistancia < distancia[i])
 				{
@@ -864,11 +866,12 @@ void shortpath(int distanciasCidades[][quantidade], int *nos, int origem, int de
 		atual = k;
 		conhecidos[atual] = 1;
 	}
-	printf(" A distancia minima entre %s e %s eh %d km",nos[origem],nos[destino],distancia[destino]);
-	printf("caminho: ");
-	for(z=0;z<i;z++)
-	{
-		printf("%s ->",caminho[z]);
-	}
-	printf("%s ->",caminho[destino]);
+	printf(" A distancia minima entre %s e %s eh %d km",nos[origem].nome,nos[destino].nome,distancia[destino]);
+	// printf("\ncaminho: ");
+	// for(z=0;z<i;z++)
+	// {
+	// 	printf("%d ->",caminho[z]);
+	// }
+
+	printf("%s",nos[destino].nome);
 }
