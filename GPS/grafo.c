@@ -5,7 +5,7 @@
 
 void menu(void);
 
-main()
+int main()
 {
     graph mapa;
 	iniciar(&mapa);
@@ -15,6 +15,7 @@ main()
 void menu(void)
 {
     int opcao;
+    char origem[30],destino[30];
 
     do
     {
@@ -28,6 +29,7 @@ void menu(void)
         switch (opcao)
         {
             case 1:
+                printf("digite o estado ou sigla de origem:");
                 continuar();
                 break;
             

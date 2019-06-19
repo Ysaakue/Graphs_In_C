@@ -1,5 +1,6 @@
 // DEFINIÇÃOO DE BIBLIOTECAS
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
@@ -829,7 +830,7 @@ void iniciar(graph *grafo)
 void shortpath(int distanciasCidades[][quantidade], int *nos, int origem, int destino)
 {
 	int caminho[quantidade],conhecidos[quantidade],distancia[quantidade];
-	int atual,i,k,distancia_atual,min,novadistancia;
+	int atual,i,k,distancia_atual,min,novadistancia,z;
 
 	for(i=0;i<quantidade;i++)
 	{
@@ -864,4 +865,10 @@ void shortpath(int distanciasCidades[][quantidade], int *nos, int origem, int de
 		conhecidos[atual] = 1;
 	}
 	printf(" A distancia minima entre %s e %s eh %d km",nos[origem],nos[destino],distancia[destino]);
+	printf("caminho: ");
+	for(z=0;z<i;z++)
+	{
+		printf("%s ->",caminho[z]);
+	}
+	printf("%s ->",caminho[destino]);
 }
